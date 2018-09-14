@@ -29,7 +29,7 @@
 
 <div class="well">
 <h1 class="card-title text-center">Sign In</h1>
-        <form class="from-signin" action="includes/login.php" method="post">
+        <form class="from-signin" action="loginfunction.php" method="post">
             <div class="form-group">
                 <input name="username" type="text" class="form-control" placeholder="Enter Username">
             </div>
