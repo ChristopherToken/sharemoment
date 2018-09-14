@@ -7,28 +7,44 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .loginButton{
+            margin-top: 10px;
+        }
 
+        .loginForm{
+            margin-top: 150px;
+        }
+    </style>
     <title>Login</title>
   </head>
   <body>
 
 
 <!--LOGIN-->
+<div class="loginForm">
+<div class="container">
+<div class="row">
+<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
 
 <div class="well">
-<h4>Login</h4>
-<form action="includes/login.php" method="post">
-<div class="form-group">
-    <input name="username" type="text" class="form-control" placeholder="Enter Username">
+<h1 class="card-title text-center">Sign In</h1>
+        <form class="from-signin" action="includes/login.php" method="post">
+            <div class="form-group">
+                <input name="username" type="text" class="form-control" placeholder="Enter Username">
+            </div>
+            <div class="from-group">
+                <input type="password" name="password" class="form-control" placeholder="Enter Password">
+            </div>
+    <div class="loginButton">
+        <button class="btn btn-lg btn-primary btn-block text-uppercase" name="login" type="submit">Submit</button>
+    </div>
 </div>
-<div class="input-group">
-<input type="password" name="password" class="form-control" placeholder="Enter Password">
-<span class="input-group-btn">
-    <button class="btn btn-primary" name="login" type="submit">Submit
-</button>
-</span>
+        </form>
+    </div>
 </div>
-</form>
+</div>
+</div>
 </div>
 
 
