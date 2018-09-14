@@ -30,7 +30,14 @@ include 'main-header.php';
 
         <body>
 
-            <div class="container">
+
+            <?php 
+            
+                    include 'gallery-feed.php';
+            
+            ?>
+
+            <!--<div class="container">
 
 
 
@@ -83,7 +90,12 @@ include 'main-header.php';
 
                     </div>
                 </div>
-            </div>
+            </div>-->
+            <footer>
+                <?php
+                    include 'main-footer.php';
+                ?>
+            </footer>
 
             <!--Gallery Function-->
 
@@ -103,14 +115,16 @@ include 'main-header.php';
                 <div class="modal-body">
                     <img id="image-gallery-image" class="img-responsive img-fluid"  src="">
                 </div>
-                <div class="modal-footer">
-                    <!--
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
-                    </div>
-                    -->
+                <div class="modal-footer"> 
                     
-                    <div class="col-md-8 text-justify" id="image-gallery-caption">
+                   <!-- PREVIOS BUTTON 
+                       
+                   <div class="col-md-4">
+                        <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
+                    </div> -->
+                    
+                    
+                   <div class="col-md-8 text-justify" id="image-gallery-caption">
                         This text will be overwritten by jQuery
                     </div>
                     <div class="col-md-4">
@@ -118,7 +132,7 @@ include 'main-header.php';
                     </div>
             <script type="text/javascript">
             </script>
-
+            
             
         </body>
  
@@ -203,10 +217,5 @@ function loadGallery(setIDs, setClickAttr) {
             
         </script>
     </body>
-
-<?php
-    include 'main-footer.php';
-
-?>
 </body>
 

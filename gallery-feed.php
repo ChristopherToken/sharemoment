@@ -6,21 +6,9 @@
     <style>
     @import url('https://fonts.googleapis.com/css?family=Kanit');
     </style>
-    <link type="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>Responsive Event Html template bootstrap 4 - Bootsnipp.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-    </style>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
 
     <style>
     
@@ -135,44 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md" >
-            <div class="modal-content">
-                <div class="modal-header">
-                <div class="col-8">
-                        <span class="photoBy">
-                       <p>Shoot by: <a class="photoBy" id="BY" href="">Komsak</a></p>
-                        </span>
-                    </div>
-                    <div class="col-md-4">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <img id="image-gallery-image" class="img-responsive img-fluid"  src="">
-                </div>
-                <div class="modal-footer">
-                    <!--
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
-                    </div>
-                    -->
-                    
-                    <div class="col-md-8 text-justify" id="image-gallery-caption">
-                        This text will be overwritten by jQuery
-                    </div>
-                    <div class="col-md-4">
-                    <a href="#" class="btn btn-info" role="button">Download</a>
-                    </div>
-                    <!--
-                    <div class="col-md-4">
-                        <button type="button" id="show-next-image" class="btn btn-default">Next</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-                    -->
+        
     <script type="text/javascript">
         $(document).ready(function() {
 

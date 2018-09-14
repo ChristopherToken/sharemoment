@@ -1,5 +1,7 @@
 /*GALLERY*/
-
+body {
+    width: 100%;
+}
 .gal {
     -ms-column-count: 3;
     -webkit-column-count: 3;
