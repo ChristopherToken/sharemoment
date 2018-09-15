@@ -8,6 +8,7 @@ include 'main-header.php';
 <!DOCTYPE html>
 <html lang="en">
         <!--landing page-->
+        <link rel="stylesheet" href="landing.css">
         <header class="masthead text-white ">
             <div class="overlay"></div>
             <div class="container slider-top-text">
