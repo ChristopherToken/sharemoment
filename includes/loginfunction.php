@@ -1,5 +1,6 @@
-<?php ob_start(); 
-include 'db.php'; ?>
+<?php include 'db.php'; ?>
+
+<?php session_start(); ?>
 
 
 
@@ -44,6 +45,8 @@ $select_user_query = mysqli_query($connection, $query);
             header("Location: ../includes/login.php");
 
         } else if ($username = $db_username && $password = $db__user_password) {
+
+            echo $_SESSION['username'] = $db_username;
 
             header("Location: ../includes/register.php");
 
