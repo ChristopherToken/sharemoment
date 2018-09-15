@@ -38,33 +38,16 @@
                         <div class="gal">
 
                         
-                   <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"   data-caption="Some lovely red flowers" data-caption="Some lovely red flowers" data-image="https://images.unsplash.com/photo-1532370184535-22cec5ca8480?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0af28a51f414df550baa22cc4dec28f&auto=format&fit=crop&w=1350&q=80" data-target="#image-gallery">
-                        <img class="img-responsive" src="https://images.unsplash.com/photo-1532370184535-22cec5ca8480?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c0af28a51f414df550baa22cc4dec28f&auto=format&fit=crop&w=1350&q=80" alt="">
-                   </a>
 
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.unsplash.com/photo-1523044832861-02368d48d715?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=003266d0f63b9098b970a00c0028b486&auto=format&fit=crop&w=634&q=80" data-target="#image-gallery" >
-                        <img src="https://images.unsplash.com/photo-1523044832861-02368d48d715?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=003266d0f63b9098b970a00c0028b486&auto=format&fit=crop&w=634&q=80" class="img-fluid" alt="Responsive image">
-                    </a>                
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.pexels.com/photos/824298/pexels-photo-824298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-target="#image-gallery" >
+                        <img src="https://images.pexels.com/photos/824298/pexels-photo-824298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    </a>
+
                         
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery" >
                         <img src="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                     </a>
 
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.unsplash.com/photo-1505253668822-42074d58a7c6?ixlib=rb-0.3.5&s=ac1ee4a26a037bfdd8a78fda77c496f4&auto=format&fit=crop&w=634&q=80" data-target="#image-gallery" >
-                        <img src="https://images.unsplash.com/photo-1505253668822-42074d58a7c6?ixlib=rb-0.3.5&s=ac1ee4a26a037bfdd8a78fda77c496f4&auto=format&fit=crop&w=634&q=80" alt="">
-                    </a>
-
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.unsplash.com/photo-1521566878949-d0febfb1e9bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3b5ee0942ce548abde8fbd1cb096330&auto=format&fit=crop&w=1974&q=80" data-target="#image-gallery" >
-                        <img src="https://images.unsplash.com/photo-1521566878949-d0febfb1e9bb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3b5ee0942ce548abde8fbd1cb096330&auto=format&fit=crop&w=1974&q=80" alt="">
-                    </a>
-
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.unsplash.com/photo-1519549735396-e5f6f8ee578c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35d25dac36ac5de19838c2e22755d0b8&auto=format&fit=crop&w=1350&q=80" data-target="#image-gallery" >
-                            <img src="https://images.unsplash.com/photo-1519549735396-e5f6f8ee578c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35d25dac36ac5de19838c2e22755d0b8&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </a> 
-                    
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.unsplash.com/photo-1515233496779-1fe0eedba426?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d6b5dbd94efc099e0a08e8dba05bf423&auto=format&fit=crop&w=1350&q=80" data-target="#image-gallery" >                    
-                            <img src="https://images.unsplash.com/photo-1515233496779-1fe0eedba426?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d6b5dbd94efc099e0a08e8dba05bf423&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </a>
                     
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.pexels.com/photos/518213/pexels-photo-518213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery" >                    
                         <img src="https://images.pexels.com/photos/518213/pexels-photo-518213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">

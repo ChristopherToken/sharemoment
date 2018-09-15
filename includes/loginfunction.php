@@ -1,4 +1,7 @@
-<?php include 'db.php'; ?>
+<?php ob_start(); 
+include 'db.php'; ?>
+
+
 
 <?php 
 
@@ -22,11 +25,32 @@ $select_user_query = mysqli_query($connection, $query);
 
         while($row = mysqli_fetch_array($select_user_query)) {
 
-            echo $db_id = $row['id'];
+            $db_id = $row['id'];
+            $db_username = $row['username'];
+            $db__user_password= $row['password'];
+            $db_user_real_name = $row['name'];
+            $db__user_email= $row['email'];
+            $db_created_at = $row['created_at'];
 
         }
 
+    }
 
-}
 
-?>
+
+
+        if($username !== $db_username && $password !== $db__user_password) {
+
+            header("Location: ../includes/login.php");
+
+        } else if ($username = $db_username && $password = $db__user_password) {
+
+            header("Location: ../includes/register.php");
+
+        } else {
+
+            header("Location: ../includes/login.php");
+
+        }
+
+        ?>
