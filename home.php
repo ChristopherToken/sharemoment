@@ -38,9 +38,11 @@ include 'main-header.php';
             ?>
 
             <footer>
+
                 <?php //Include Footer
                     include 'main-footer.php';
                 ?>
+                
             </footer>
 
             <!--Gallery Function-->
@@ -95,7 +97,7 @@ include 'main-header.php';
 
                 }
             });
-            
+
 //Gallery function
              $(document).ready(function() {
 

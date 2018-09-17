@@ -1,11 +1,11 @@
-<?php include 'db.php'; ?>
-
-<?php session_start(); ?>
-
-
 
 <?php 
 
+//include database
+include 'db.php'; 
+
+
+//looking for match password and username
 if(isset($_POST['login'])) {
 
 $username = $_POST['username'];
@@ -39,6 +39,7 @@ $select_user_query = mysqli_query($connection, $query);
 
 
 
+        //redirect users to other page if they match.. 
 
         if($username !== $db_username && $password !== $db__user_password) {
 
