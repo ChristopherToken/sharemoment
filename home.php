@@ -16,9 +16,22 @@ include 'main-header.php';
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h3 class="my-heading ">EXPLORE<span class="moment"> THE MOMENT</span></h3>
+                        </div>
+                    <div class="col align-self-center">
+                    <div class=" col-md-12 text-center">
+                     <form class="form-inline col-md-7">
+                        <input class="myform-control " type="search" placeholder="Find your moment" aria-label="Search">
+                        <button class="btn btn-light"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
+                    
+                    </div>
+
+                    <div class="col-md-12 text-center">
                         <p class="myp-slider text-center"></p>
                         <p class="myp text-center">Trendig Search | <a class="trending" href="#">Hill tripe, </a> <a class="trending" href="#"> Thai Smile,</a> <a class="trending" href="#">Bangkok,</a> <a class="trending" href="#">Bag Packer,</a> </p>
                         <!--<a class="btn btn-primary btn-join" href="#">SHARE YOUR MOMENT</a>-->
+                    </div>
                     </div>
                     <div class="col-md-12 text-center mt-5">
                         <div class="scroll-down">
