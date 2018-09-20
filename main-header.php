@@ -31,11 +31,13 @@
                     <h2 class="my-heading ">SHARE <span class="moment"> MOMENT</span></h2>
                 </a>
                 <!--Search bar-->
+                
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <form class="form-inline my-2 my-lg-0 col-md-7">
-                        <input class="myform-control mr-sm-2" type="search" placeholder="Find your moment" aria-label="Search">
-                        <button class="btn btn-light"><i class="fa fa-search"></i></button>
+                    <form class=" form-inline my-2 my-lg-0 col-md-7">
+                        <input class="sticky-search myform-control mr-sm-2" type="search" placeholder="Find your moment" aria-label="Search">
+                        <button class=" sticky-search btn btn-light"><i class="fa fa-search"></i></button>
                     </form>
+                   
                     <!--Submit photo button-->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-link">

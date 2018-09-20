@@ -5,10 +5,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Kanit');
     </style>
-    <link type="stylesheet" href="style.css">
     <meta charset="utf-8">
     <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
-    <title>Responsive Event Html template bootstrap 4 - Bootsnipp.com</title>
+    <title>Share Moment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -31,8 +30,8 @@
                 <!--Search bar-->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <form class="form-inline my-2 my-lg-0 col-md-7">
-                        <input class="myform-control mr-sm-2" type="search" placeholder="Find your moment" aria-label="Search">
-                        <button class="btn btn-light"><i class="fa fa-search"></i></button>
+                        <input class=" sticky-search myform-control mr-sm-2" type="search" placeholder="Find your moment" aria-label="Search">
+                        <button class=" sticky-search btn btn-light"><i class="fa fa-search"></i></button>
                     </form>
                     <!--Submit photo button-->
                     <ul class="navbar-nav ml-auto">

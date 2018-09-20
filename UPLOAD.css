@@ -8,27 +8,19 @@ body {
 /*MENU*/
 
 .fixed-top {
+    padding-top: 0px;
+    padding-bottom: 0px;
     background: #111;
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 1030;
 }
 
-.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.navbar-brand>img {
-    height: 100%;
-    padding: 15px;
-    width: auto;
-}
-
-.mybg-dark {
-    background: #000 !important;
+.navbar {
+     padding-top: 0px;
+    padding-bottom: 0px;
+    background: #111;
+    position: fixed;
+    z-index: 1030;
 }
 
 

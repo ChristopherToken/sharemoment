@@ -7,29 +7,21 @@ body {
 
 /*MENU*/
 
-.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+/**NAVBAR**/
 
-.navbar-brand>img {
-    height: 100%;
-    padding: 15px;
-    width: auto;
-}
 
-.mybg-dark {
-    background: #000 !important;
-}
 
 
 
 
 @media (min-width:768px) {
     header.masthead {
+       /*
         padding-top: 12rem;
         padding-bottom: 12rem;
+    */
     }
+
     header.masthead h3 {
         font-size: 4rem;
     }
@@ -45,6 +37,8 @@ body {
 
 /*SERCH*/
 
+
+
 .myform-control {
     display: block;
     width: 100%;
@@ -58,6 +52,11 @@ body {
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+.inner-wrapper {
+    vertical-align:middle;
+  }
+
 
 button.btn.btn-light {
     position: absolute;
@@ -323,3 +322,5 @@ li.list-inline-item a {
 #image-gallery-image {
     text-align: center;
 }
+
+
