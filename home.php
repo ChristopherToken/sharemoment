@@ -44,14 +44,7 @@ include 'blackNavBar.php';
                     include 'gallery-feed.php';
             ?>
 
-            <footer>
-
-                <?php //Include Footer
-                    include 'main-footer.php';
-                ?>
-                
-            </footer>
-
+ 
             <!--Gallery Function-->
             <?php include 'galleryFunction.php'; ?>
  

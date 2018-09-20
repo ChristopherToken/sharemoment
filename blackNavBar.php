@@ -36,7 +36,7 @@
                     <!--Submit photo button-->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-link">
-                            <a class="btn btn-primary btn-block btn-login" href="#">Submit a photo</a>
+                            <a class="btn btn-primary btn-block btn-login" href="upload.php">Submit a photo</a>
                         </li>
                         <!--drop down-->
                         <li class="nav-link">
