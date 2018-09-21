@@ -1,6 +1,6 @@
 <?php //Header
 
-include 'blackNavBar.php'
+include 'navigator.php'
 
 ?>
 
