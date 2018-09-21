@@ -1,4 +1,5 @@
 /*BACKGROUND IMGAGE*/
+
 header.masthead {
     position: relative;
     height: 100vh;
@@ -21,7 +22,7 @@ header.masthead .overlay {
     opacity: .3
 }
 
-.mainSearchForm{
+.mainSearchForm {
     width: 100%;
     color: #333333;
     height: 150px;
@@ -33,5 +34,3 @@ header.masthead .overlay {
     display: flex;
     float: none;
 }
-
-

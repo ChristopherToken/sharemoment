@@ -9,7 +9,7 @@ include 'blackNavBar.php';
 <html lang="en">
         <!--landing page-->
         <!--Css connect to landing.css-->
-        <link rel="stylesheet" href="landing.css">
+        <link rel="stylesheet" type="text/css" href="landing.css">
         <header class="masthead text-white ">
             <div class="overlay"></div>
             <div class="container slider-top-text">
@@ -49,6 +49,6 @@ include 'blackNavBar.php';
             <?php include 'galleryFunction.php'; ?>
  
         <!--JAVA SCRPT -->
-        <?php include 'homeJS.php'; ?>
+        <?php include 'JS/homeJS.php'; ?>
 
 
