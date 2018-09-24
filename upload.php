@@ -1,26 +1,38 @@
 <?php 
-
 //Include Header
 include 'uploadNav.php';
 
-if(isset($_POST['submit'])) {
 
-  $post_image = $_FILES['image']['name'];
-  $post_image_temp = $_FILES['image']['tmp_name'];
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'sharemoment');
+ 
 
-  move_uploaded_file($post_image_temp, "../images/$post_image");
 
-  $query = "INSERT INTO sharemoment(image_name)";
-  $query .= "VALUES ('{$post_image}')";
+/* Attempt to connect to MySQL database */
+$connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
 
-  $create_post_query = mysqli_query($connection, $query);
-        
-        if(!$create_post_query) {
 
-            die ("QUERY FAILD" . mysqli_error($connection));
-        }
-      
-    }
+// Check connection
+if($connection === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
+if (isset($_POST['submit'])) {
+    $post_image = $_FILES['image']['name'];
+    $post_image_temp = $_FILES['image']['tmp_name'];
+
+    move_uploaded_file($post_image_temp, "../uploaded/ $post_image_temp");
+
+    $query = "INSERT INTO sharemoment(image_name)";
+    $query .= "VALUES ('{$post_image}')";
+}
+
 
 ?>
 
@@ -37,6 +49,8 @@ if(isset($_POST['submit'])) {
     <div class="col">
     <div class ="uploadForm">
     <div class="row" style="padding: 10px 15px 9px;">
+
+    
   <form action="" method="post" enctype="multipart/form-data" role="form">
           <h1 class="text-center">Submit a photo</h1>
           <p class="text-center">Please only upload photos that you own the rights to.</p>
