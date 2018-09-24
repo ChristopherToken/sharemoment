@@ -1,4 +1,37 @@
+<?php 
+ 
+    //PULL POST FROM DATABASE
+    $query = "SELECT * FROM sharemoment";
+    $select_posts = mysqli_query($connection,$query);
 
+    while($row = mysqli_fetch_assoc($select_posts)) {
+
+        $id = $row['id'];           
+        $username = $row['username'];
+        $name = $row['name'];
+        $email = $row['email'];
+        $post_image = $row['image_name'];
+    
+    //DISPLAY POST IN TABLE
+    echo "<tr>";
+        echo "<td>{$post_id}</td>";
+        echo "<td>{$post_author}</td>";
+        echo "<td>{$post_title}</td>";
+        echo "<td>{$post_category_id}</td>";
+        echo "<td>{$post_status}</td>";
+        echo "<td><img width='100' src='../images/$post_image' alt='image'</td>";
+        echo "<td>{$post_tags}</td>";
+        echo "<td>{$post_comment_count}</td>";
+        echo "<td>{$post_date}</td>";
+    echo "</tr>";
+
+    
+
+
+    
+    }  
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -43,7 +76,9 @@
                         <img src="https://images.pexels.com/photos/824298/pexels-photo-824298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
                     </a>
 
-                        
+          }  
+
+?>                 
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery" >
                         <img src="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                     </a>
