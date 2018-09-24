@@ -1,196 +1,61 @@
-<?php //Header
+<?php 
 
-include 'navigator.php'
+//Include Header
+include 'uploadNav.php';
+
+if(isset($_POST['submit'])) {
+
+  $post_image = $_FILES['image']['name'];
+  $post_image_temp = $_FILES['image']['tmp_name'];
+
+  move_uploaded_file($post_image_temp, "../images/$post_image");
+
+  $query = "INSERT INTO sharemoment(image_name)";
+  $query .= "VALUES ('{$post_image}')";
+
+  $create_post_query = mysqli_query($connection, $query);
+        
+        if(!$create_post_query) {
+
+            die ("QUERY FAILD" . mysqli_error($connection));
+        }
+      
+    }
 
 ?>
 
-        <!--UPLOAD-->
-        <div class="container center_div">
-            <div class="overlay">
-                <div class="container slider-top-text">
-                    <div class="row">
-                        <div class="container text-center">
-                            <div id="identitycard" style="margin-top:50px"></div>
-
-                            <h2>File Upload & Image Preview</h2>
-                            <p class="lead">Upload your moment and share</p>
-
-                            <!-- Upload  -->
-                            <form id="file-upload-form" class="uploader">
-                                <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
-
-                                <label for="file-upload" id="file-drag">
-                                <img id="file-image" src="#" alt="Preview" class="hidden">
-                                <div id="start">
-                                <i class="fa fa-download" aria-hidden="true"></i>
-                                <div>Select a file or drag here</div>
-                                <div id="notimage" class="hidden">Please select an image</div>
-                                <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
-                                </div>
-                                <div id="response" class="hidden">
-                                <div id="messages"></div>
-                                <progress class="progress" id="file-progress" value="0">
-                                    <span>0</span>%
-                                </progress>
-                                </div>
-                            </label>
-                            </form>
 
 
-                        </div>
 
-                    </div>
-                </div>
-            </div>
+
+<body class="uploadForm">
+<div class="container">
+
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col">
+    <div class ="uploadForm">
+    <div class="row" style="padding: 10px 15px 9px;">
+  <form action="" method="post" enctype="multipart/form-data" role="form">
+          <h1 class="text-center">Submit a photo</h1>
+          <p class="text-center">Please only upload photos that you own the rights to.</p>
+          <div class="form-group"> 
+          <div class="row" style="margin-bottom: 20px;">
+          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-md-offset-3 col-sm-offset-3 col-xs-offset-2"> 
+  <input type="file"  name="image" > 
+          </div>
+          </div>
+          <div class="row text-center" style="padding-left: 20px;padding-right: 20px;">
+  <button type="submit"  name="submit" class="btn btn-md btn-block btn btn-dark">Add Photo</button>
+          </div>                                                 
+          </div>                                                                                          
+  </form>
         </div>
         </div>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
-
-        <script>
-            // File Upload
-            function ekUpload() {
-                function Init() {
-
-                    console.log("Upload Initialised");
-
-                    var fileSelect = document.getElementById('file-upload'),
-                        fileDrag = document.getElementById('file-drag'),
-                        submitButton = document.getElementById('submit-button');
-
-                    fileSelect.addEventListener('change', fileSelectHandler, false);
-
-                    // Is XHR2 available?
-                    var xhr = new XMLHttpRequest();
-                    if (xhr.upload) {
-                        // File Drop
-                        fileDrag.addEventListener('dragover', fileDragHover, false);
-                        fileDrag.addEventListener('dragleave', fileDragHover, false);
-                        fileDrag.addEventListener('drop', fileSelectHandler, false);
-                    }
-                }
-
-                function fileDragHover(e) {
-                    var fileDrag = document.getElementById('file-drag');
-
-                    e.stopPropagation();
-                    e.preventDefault();
-
-                    fileDrag.className = (e.type === 'dragover' ? 'hover' : 'modal-body file-upload');
-                }
-
-                function fileSelectHandler(e) {
-                    // Fetch FileList object
-                    var files = e.target.files || e.dataTransfer.files;
-
-                    // Cancel event and hover styling
-                    fileDragHover(e);
-
-                    // Process all File objects
-                    for (var i = 0, f; f = files[i]; i++) {
-                        parseFile(f);
-                        uploadFile(f);
-                    }
-                }
-
-                // Output
-                function output(msg) {
-                    // Response
-                    var m = document.getElementById('messages');
-                    m.innerHTML = msg;
-                }
-
-                function parseFile(file) {
-
-                    console.log(file.name);
-                    output(
-                        '<strong>' + encodeURI(file.name) + '</strong>'
-                    );
-
-                    // var fileType = file.type;
-                    // console.log(fileType);
-                    var imageName = file.name;
-
-                    var isGood = (/\.(?=gif|jpg|png|jpeg)/gi).test(imageName);
-                    if (isGood) {
-                        document.getElementById('start').classList.add("hidden");
-                        document.getElementById('response').classList.remove("hidden");
-                        document.getElementById('notimage').classList.add("hidden");
-                        // Thumbnail Preview
-                        document.getElementById('file-image').classList.remove("hidden");
-                        document.getElementById('file-image').src = URL.createObjectURL(file);
-                    } else {
-                        document.getElementById('file-image').classList.add("hidden");
-                        document.getElementById('notimage').classList.remove("hidden");
-                        document.getElementById('start').classList.remove("hidden");
-                        document.getElementById('response').classList.add("hidden");
-                        document.getElementById("file-upload-form").reset();
-                    }
-                }
-
-                function setProgressMaxValue(e) {
-                    var pBar = document.getElementById('file-progress');
-
-                    if (e.lengthComputable) {
-                        pBar.max = e.total;
-                    }
-                }
-
-                function updateFileProgress(e) {
-                    var pBar = document.getElementById('file-progress');
-
-                    if (e.lengthComputable) {
-                        pBar.value = e.loaded;
-                    }
-                }
-
-                function uploadFile(file) {
-
-                    var xhr = new XMLHttpRequest(),
-                        fileInput = document.getElementById('class-roster-file'),
-                        pBar = document.getElementById('file-progress'),
-                        fileSizeLimit = 1024; // In MB
-                    if (xhr.upload) {
-                        // Check if file is less than x MB
-                        if (file.size <= fileSizeLimit * 1024 * 1024) {
-                            // Progress bar
-                            pBar.style.display = 'inline';
-                            xhr.upload.addEventListener('loadstart', setProgressMaxValue, false);
-                            xhr.upload.addEventListener('progress', updateFileProgress, false);
-
-                            // File received / failed
-                            xhr.onreadystatechange = function(e) {
-                                if (xhr.readyState == 4) {
-                                    // Everything is good!
-
-                                    // progress.className = (xhr.status == 200 ? "success" : "failure");
-                                    // document.location.reload(true);
-                                }
-                            };
-
-                            // Start upload
-                            xhr.open('POST', document.getElementById('file-upload-form').action, true);
-                            xhr.setRequestHeader('X-File-Name', file.name);
-                            xhr.setRequestHeader('X-File-Size', file.size);
-                            xhr.setRequestHeader('Content-Type', 'multipart/form-data');
-                            xhr.send(file);
-                        } else {
-                            output('Please upload a smaller file (< ' + fileSizeLimit + ' MB).');
-                        }
-                    }
-                }
-
-                // Check for the various File API support.
-                if (window.File && window.FileList && window.FileReader) {
-                    Init();
-                } else {
-                    document.getElementById('file-drag').style.display = 'none';
-                }
-            }
-            ekUpload();
-        </script>
-    </body>
-
+    <div class="col">
+    </div>
+  </div>
+</div>
+</body>

@@ -80,7 +80,6 @@ function loadGallery(setIDs, setClickAttr) {
 var searchHeight = $(".search-bar").outerHeight();
 var offset = $(".search-bar").offset().top;
 var totalHeight = searchHeight + offset;
-console.log(totalHeight);
 $(window).scroll(function(){
     if($(document).scrollTop() >= totalHeight) {
         $('.sticky-search').show();

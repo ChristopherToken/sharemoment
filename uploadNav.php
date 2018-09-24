@@ -12,7 +12,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/UPLOAD.css">
+    <link rel="stylesheet" type="text/css" href="CSS/uploadForm.css">
 </head>
 
 <body>
@@ -27,12 +27,13 @@
                 <a class="navbar-brand" href="home.php  ">
                     <h2 class="my-heading ">SHARE <span class="moment"> MOMENT</span></h2>
                 </a>
-                <!--Search bar-->
+                <!--Search bar
                 <div class=" collapse navbar-collapse" id="navbarResponsive">
                     <form class="form-inline my-2 my-lg-0 col-md-7">
                         <input class=" sticky-search myform-control mr-sm-2" type="search" placeholder="Find your moment" aria-label="Search">
                         <button class=" sticky-search btn btn-light"><i class="fa fa-search"></i></button>
                     </form>
+                    -->
                 
                     <!--Submit photo button-->
                   
