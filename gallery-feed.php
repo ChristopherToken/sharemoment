@@ -1,5 +1,22 @@
 <?php 
+
+
+/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'sharemoment');
  
+/* Attempt to connect to MySQL database */
+$connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
+// Check connection
+if($connection === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+
     //PULL POST FROM DATABASE
     $query = "SELECT * FROM sharemoment";
     $select_posts = mysqli_query($connection,$query);
@@ -10,25 +27,16 @@
         $username = $row['username'];
         $name = $row['name'];
         $email = $row['email'];
-        $post_image = $row['image_name'];
+        //$post_image = $row['image_name'];
     
     //DISPLAY POST IN TABLE
     echo "<tr>";
-        echo "<td>{$post_id}</td>";
-        echo "<td>{$post_author}</td>";
-        echo "<td>{$post_title}</td>";
-        echo "<td>{$post_category_id}</td>";
-        echo "<td>{$post_status}</td>";
-        echo "<td><img width='100' src='../images/$post_image' alt='image'</td>";
-        echo "<td>{$post_tags}</td>";
-        echo "<td>{$post_comment_count}</td>";
-        echo "<td>{$post_date}</td>";
+        echo "<td>{$username}</td>";
+        echo "<td>{$name}</td>";
+        echo "<td>{$email}</td>";
+        echo "<td><img src='uploaded/$post_image'</td>";
     echo "</tr>";
 
-    
-
-
-    
     }  
 
 ?>
@@ -70,15 +78,11 @@
 
                         <div class="gal">
 
-                        
-
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.pexels.com/photos/824298/pexels-photo-824298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-target="#image-gallery" >
-                        <img src="https://images.pexels.com/photos/824298/pexels-photo-824298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                    
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers"  data-image="" data-target="#image-gallery" >
+                      <?php  echo "<td><img src='uploaded/$post_image'</td>";?>
                     </a>
-
-          }  
-
-?>                 
+             
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery" >
                         <img src="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
                     </a>

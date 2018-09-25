@@ -70,7 +70,7 @@ header.masthead .overlay {
 /*SERCH*/
 
 .myform-control {
-    display: none;
+    display: block;
     width: 100%;
     padding: .375rem .75rem;
     font-size: 1rem;

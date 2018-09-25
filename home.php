@@ -19,8 +19,7 @@ include 'navigator.php';
             
             
             <!--Search bar-->
-                <?php include "searchBar.php"; ?>
-            
+               <?php include "searchBar.php"; ?>
             
             <!--Trending Search-->
             <div>            
