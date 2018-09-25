@@ -27,19 +27,10 @@ if (isset($_POST['submit'])) {
     $post_image = $_FILES['image']['name'];
     $post_image_temp = $_FILES['image']['tmp_name'];
 
-    
-    move_uploaded_file($post_image_temp, "uploaded/ $post_image");
+    move_uploaded_file($post_image_temp, "../uploaded/ $post_image_temp");
 
     $query = "INSERT INTO sharemoment(image_name)";
     $query .= "VALUES ('{$post_image}')";
-
-    $create_post_query = mysqli_query($connection, $query);
-
-
-    if(!$create_post_query)   {
-
-        die ("QUERY FAILD" . mysqli_error($connection));
-    }
 }
 
 
