@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php 
 
 
@@ -41,6 +42,9 @@ if($connection === false){
     }  
 
 ?>
+=======
+
+>>>>>>> parent of 887d389... update
 =======
 
 >>>>>>> parent of 887d389... update
@@ -91,6 +95,9 @@ if($connection === false){
 =======
 
                         
+<<<<<<< HEAD
+>>>>>>> parent of 887d389... update
+=======
 >>>>>>> parent of 887d389... update
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  data-caption="Thai tample please pray for Thailand Some lovely red flowers" data-image="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery" >
                         <img src="https://images.pexels.com/photos/904911/pexels-photo-904911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
